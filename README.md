@@ -7,6 +7,9 @@ The host and port is set as local in main.py
 
 Use mongo DB as database: In src/common/constants.py the mongo client is initialized please change the client connection to yours if necessary.
 
+Database Name: user_database
+Collection Name: user_details
+
 Use Postman to hit the APIs and see the output
 
 There are 3 APIS :
