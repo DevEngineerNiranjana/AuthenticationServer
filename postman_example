@@ -12,6 +12,7 @@ Json Input:
 
 sample output:
 {"status": "True", "msg": "User registered successfully"}
+
 for reference: register.png
 
 Login API:
@@ -19,10 +20,11 @@ GET request
 give key as:  "Authorization"
 in Headers part
 and token as the value of the key by adding the  string  "Bearer" at the beginning
-Reference: login.png
 
 sample output:
 {"status": "True", "msg": "Hi, Niranjana4 welcome"}
+
+for reference: login.png
 
 Generate Token API:
 GET request
@@ -31,7 +33,8 @@ add 3 keys and values:
 "username" : "your_username"
 "password" : "your_password"
 "firstname" : "your_firstname"
-Reference: generate_token.png
 
 sample output: {"status": "True", "msg": "success", "data":
 "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im5pcmFuamFuYTRAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6Im9wZW50aGVib3gxIiwiZmlyc3RuYW1lIjoiTmlyYW5qYW5hIn0.d08dHrd6ejHO01xJaLoINeirZ6B_q0D2k50DNTBKGV0"}
+
+for reference: generate_token.png
