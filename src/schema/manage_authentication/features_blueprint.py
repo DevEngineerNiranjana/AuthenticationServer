@@ -34,7 +34,6 @@ def user_login():
         err, decoded_dict = jwt_parser.decode_access_token()
         if err:
             return json.dumps({"status": "False", "msg": err}), 404
-
         user_obj = UserDetails()
         err, user_name = user_obj.verify_user(decoded_dict)
         if err:

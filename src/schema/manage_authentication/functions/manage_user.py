@@ -15,7 +15,6 @@ class UserDetails:
                              {"email": user_data["username"]}]}
             projection = {"_id": 1, "password": 1}
             record_list = self.col.find(query, projection)
-
             if record_list.count() > 0:
                 for record in record_list:
                     decode_pass = fernet.decrypt(record["password"]).decode()
